@@ -35,8 +35,8 @@ pip install SpeechRecognition
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/AmirOlad/text_to_speech.git
+cd text_to_speech
 ```
 
 ---
@@ -263,7 +263,7 @@ A simple project structure can look like this:
 
 ```text
 .
-├── transcribe.py
+├── Speech_to_text.py
 ├── README.md
 ├── README_FA.md
 └── pars_test.wav
