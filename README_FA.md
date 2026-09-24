@@ -51,7 +51,7 @@ cd text_to_speech
 اگر فایل صوتی را مشخص نکنید:
 
 ```bash
-python transcribe.py
+python Speech_to_text.py
 ```
 
 اسکریپت به‌صورت خودکار جدیدترین فایل با الگوی زیر را پیدا می‌کند:
@@ -69,13 +69,13 @@ pars*.wav
 می‌توانید مسیر فایل صوتی را مستقیماً وارد کنید:
 
 ```bash
-python transcribe.py pars_test.wav
+python Speech_to_text.py pars_test.wav
 ```
 
 یا:
 
 ```bash
-python transcribe.py my_voice.wav
+python Speech_to_text.py my_voice.wav
 ```
 
 ---
@@ -91,7 +91,7 @@ fa-IR
 برای تبدیل صدای انگلیسی به متن، می‌توانید از `en-US` استفاده کنید:
 
 ```bash
-python transcribe.py my_voice.wav -l en-US
+python Speech_to_text.py my_voice.wav -l en-US
 ```
 
 به همین شکل می‌توانید کد زبان موردنظر خود را مشخص کنید.
@@ -105,7 +105,7 @@ python transcribe.py my_voice.wav -l en-US
 برای تعیین نام یا مسیر دلخواه:
 
 ```bash
-python transcribe.py my_voice.wav -l en-US -o result.txt
+python Speech_to_text.py my_voice.wav -l en-US -o result.txt
 ```
 
 مثلاً:
@@ -122,7 +122,7 @@ result.txt
 اگر فقط می‌خواهید متن را دریافت کنید و فایل `.txt` ایجاد نشود:
 
 ```bash
-python transcribe.py my_voice.wav --no-save
+python Speech_to_text.py my_voice.wav --no-save
 ```
 
 ---
