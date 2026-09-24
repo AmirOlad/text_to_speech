@@ -38,8 +38,8 @@ pip install SpeechRecognition
 اگر پروژه را از GitHub دریافت کرده‌اید:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/AmirOlad/text_to_speech.git
+cd text_to_speech
 ```
 
 ---
@@ -140,19 +140,19 @@ python transcribe.py my_voice.wav --no-save
 
 ```bash
 # پیدا کردن خودکار جدیدترین فایل pars*.wav
-python transcribe.py
+python Speech_to_text.py
 
 # تبدیل یک فایل مشخص
-python transcribe.py pars_test.wav
+python Speech_to_text.py pars_test.wav
 
 # تبدیل صدای انگلیسی
-python transcribe.py my_voice.wav -l en-US
+python Speech_to_text.py my_voice.wav -l en-US
 
 # ذخیره با نام دلخواه
-python transcribe.py my_voice.wav -l en-US -o result.txt
+python Speech_to_text.py my_voice.wav -l en-US -o result.txt
 
 # تبدیل بدون ذخیره فایل متنی
-python transcribe.py my_voice.wav --no-save
+python Speech_to_text.py my_voice.wav --no-save
 ```
 
 ---
@@ -207,7 +207,7 @@ my_voice.txt
 همچنین می‌توانید مسیر خروجی دلخواه تعیین کنید:
 
 ```bash
-python transcribe.py my_voice.wav -o transcription.txt
+python Speech_to_text.py my_voice.wav -o transcription.txt
 ```
 
 ---
@@ -223,7 +223,7 @@ fa-IR
 برای مثال، برای تشخیص زبان انگلیسی:
 
 ```bash
-python transcribe.py my_voice.wav -l en-US
+python Speech_to_text.py my_voice.wav -l en-US
 ```
 
 کد زبان را می‌توان متناسب با زبان صحبت‌شده در فایل صوتی تغییر داد.
@@ -277,7 +277,7 @@ pip install SpeechRecognition
 
 ```text
 .
-├── transcribe.py
+├── Speech_to_text.py
 ├── README.md
 ├── README_FA.md
 └── pars_test.wav
