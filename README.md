@@ -48,7 +48,7 @@ cd text_to_speech
 Run the script without specifying an input file:
 
 ```bash
-python transcribe.py
+python Speech_to_text.py
 ```
 
 In this mode, the script automatically searches for the latest file matching:
@@ -66,13 +66,13 @@ This is useful when the audio file was created by another recording script that 
 You can provide the path to an audio file:
 
 ```bash
-python transcribe.py pars_test.wav
+python Speech_to_text.py pars_test.wav
 ```
 
 Or:
 
 ```bash
-python transcribe.py my_voice.wav
+python Speech_to_text.py my_voice.wav
 ```
 
 ---
@@ -88,7 +88,7 @@ fa-IR
 For English speech, use:
 
 ```bash
-python transcribe.py my_voice.wav -l en-US
+python Speech_to_text.py my_voice.wav -l en-US
 ```
 
 You can replace the language code with another supported Google Speech Recognition language code.
@@ -102,7 +102,7 @@ By default, the transcription is saved as a `.txt` file next to the audio file.
 You can specify a custom output path:
 
 ```bash
-python transcribe.py my_voice.wav -l en-US -o result.txt
+python Speech_to_text.py my_voice.wav -l en-US -o result.txt
 ```
 
 ---
@@ -112,7 +112,7 @@ python transcribe.py my_voice.wav -l en-US -o result.txt
 If you only want the transcription output without creating a `.txt` file, use:
 
 ```bash
-python transcribe.py my_voice.wav --no-save
+python Speech_to_text.py my_voice.wav --no-save
 ```
 
 ---
@@ -130,19 +130,19 @@ python transcribe.py my_voice.wav --no-save
 
 ```bash
 # Automatically find the latest pars*.wav file
-python transcribe.py
+python Speech_to_text.py
 
 # Transcribe a specific file
-python transcribe.py pars_test.wav
+python Speech_to_text.py pars_test.wav
 
 # Transcribe English audio
-python transcribe.py my_voice.wav -l en-US
+python Speech_to_text.py my_voice.wav -l en-US
 
 # Save to a custom output file
-python transcribe.py my_voice.wav -l en-US -o result.txt
+python Speech_to_text.py my_voice.wav -l en-US -o result.txt
 
 # Transcribe without saving a text file
-python transcribe.py my_voice.wav --no-save
+python Speech_to_text.py my_voice.wav --no-save
 ```
 
 ---
@@ -196,7 +196,7 @@ The output file contains the recognized speech as plain text.
 You can also choose a custom output filename:
 
 ```bash
-python transcribe.py my_voice.wav -o transcription.txt
+python Speech_to_text.py my_voice.wav -o transcription.txt
 ```
 
 ---
@@ -212,7 +212,7 @@ fa-IR
 For example, to recognize English:
 
 ```bash
-python transcribe.py my_voice.wav -l en-US
+python Speech_to_text.py my_voice.wav -l en-US
 ```
 
 The language parameter can be changed according to the language of the spoken audio.
